@@ -1,14 +1,15 @@
-// Your web app's Firebase configuration
-var firebaseConfig = {
-  apiKey: 'AIzaSyBe8gmgnXYKIgJiC8fMTBsHHcaSjRI9UVY',
-  authDomain: 'iplauction-2021-4cec1.firebaseapp.com',
-  projectId: 'iplauction-2021-4cec1',
-  storageBucket: 'iplauction-2021-4cec1.appspot.com',
-  messagingSenderId: '476516664360',
-  appId: '1:476516664360:web:a0d2354cfa66d25959a11d',
-};
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBe8gmgnXYKIgJiC8fMTBsHHcaSjRI9UVY",
+    authDomain: "iplauction-2021-4cec1.firebaseapp.com",
+    databaseURL: "https://iplauction-2021-4cec1-default-rtdb.firebaseio.com",
+    projectId: "iplauction-2021-4cec1",
+    storageBucket: "iplauction-2021-4cec1.appspot.com",
+    messagingSenderId: "476516664360",
+    appId: "1:476516664360:web:a0d2354cfa66d25959a11d"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
 
 //let registration = firebase.database().ref('registrations');
 let contactUs = firebase.database().ref('contactRequest');
