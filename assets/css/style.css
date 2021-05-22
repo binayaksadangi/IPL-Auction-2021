@@ -19,7 +19,7 @@ body {
 body::before {
   content: "";
   position: fixed;
-  background: #040404 url("../img/bg.jpg") top right no-repeat;
+  background: #040404 url("../img/ipl\ web\ 2.jpg") top right no-repeat;
   background-size: cover;
   left: 0;
   right: 0;
@@ -33,6 +33,7 @@ body::before {
     background-attachment: fixed;
   }
 }
+
 
 a {
   color: #18d26e;
@@ -82,7 +83,8 @@ h1, h2, h3, h4, h5, h6 {
 
 #header h2 {
   font-size: 24px;
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom:0;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -121,6 +123,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media (max-width: 992px) {
+  #header img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+  
+  }
   #header h1 {
     font-size: 36px;
   }
@@ -129,12 +139,12 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 30px;
   }
   #header .social-links {
-    margin-top: 15px;
+    margin-top: 5px;
   }
   #header .container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center
   }
 }
 
@@ -153,7 +163,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header.header-top h1 {
-  margin-right: auto;
+  
+ margin-right: auto;
   font-size: 36px;
 }
 
@@ -168,10 +179,13 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   #header.header-top {
-    height: 60px;
+    height: 90px;
   }
   #header.header-top h1 {
     font-size: 26px;
+    margin-right: 0;
+  
+    
   }
 }
 
@@ -335,7 +349,7 @@ section.section-show {
 
 section .container {
   background: rgba(0, 0, 0, 0.9);
-  padding: 30px;
+  padding: 50px;
 }
 
 @media (max-width: 768px) {
