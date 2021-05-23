@@ -28,6 +28,7 @@ function submitContactForm(e) {
  
   saveContactInfo(name, email, message, subject);
   document.querySelector('.php-email-form').reset();
+  alert('Submitted.')
 }
 //push the data to collections
 function saveContactInfo(name, email, message, subject) {
@@ -123,7 +124,7 @@ function submitRegistration(e){
   // saveMember4Info(m4name,m4email,m4mobile,m4college,m4cname,m4cspec,m4yr);
   // saveMember5Info(m5name,m5email,m5mobile,m5college,m5cname,m5cspec,m5yr);
   // saveTeamInfo(tmember,tp1,tp2,tp3);
-
+   alert('Form submitted.');
   document.querySelector('.register-form').reset();
 }
 
@@ -297,6 +298,7 @@ function upload() {
       //number of bytes
       var progress=(snapshot.bytesTransferred/snapshot.totalBytes)*100;
       console.log("upload is " + progress +" done");
+      alert('Image uploaded');
   },function (error) {
       //handle error here
       console.log(error.message);
