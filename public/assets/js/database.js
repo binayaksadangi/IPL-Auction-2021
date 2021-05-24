@@ -25,7 +25,8 @@ function submitContactForm(e) {
   const email = document.querySelector('#email').value;
   const message = document.querySelector('#message').value;
   const subject = document.querySelector('#subject').value;
- 
+  //let date = toString(new Date());
+
   saveContactInfo(name, email, message, subject);
   document.querySelector('.php-email-form').reset();
   alert('Submitted.')
@@ -103,6 +104,9 @@ function submitRegistration(e){
   const tp2 = document.querySelector('#tp2').value;
   const tp3 = document.querySelector('#tp3').value;
 
+  //let date = new Date();
+
+  //console.log(date);
   // console.log(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr);
   // console.log(m1name,m1email,m1mobile,m1college,m1cname,m1cspec,m1yr);
   // console.log(m2name,m2email,m2mobile,m2college,m2cname,m2cspec,m2yr);
