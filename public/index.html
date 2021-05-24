@@ -454,7 +454,7 @@
        <ol>
          <li>Below 100 Lakhs = 5 Lakhs bid increase</li>
          <li>In between 100L to 1000L = 20L bid increase</li>
-         <li>Above 1000L = 0 L bid increase</li>
+         <li>Above 1000L = 100 L bid increase</li>
        </ol>
      </li>
    </ul>
@@ -606,7 +606,7 @@
             <input type="email" class="form-control" name="email" id="lemail" placeholder="Your Email" required>
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="lmobile" placeholder="Your WhatsApp Number" required>
+            <input type="mobile" class="form-control" name="mobile" id="lmobile" placeholder="Your WhatsApp Number" required>
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="lcollege" placeholder="Name of Institute" required>
@@ -684,7 +684,7 @@
             <input type="email" class="form-control" name="email" id="m1email" placeholder="Your Email" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="m1mobile" placeholder="Your WhatsApp Number" >
+            <input type="mobile" class="form-control" name="mobile" id="m1mobile" placeholder="Your WhatsApp Number" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="m1college" placeholder="Name of Institute" >
@@ -745,7 +745,7 @@
             <input type="email" class="form-control" name="email" id="m2email" placeholder="Your Email" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="m2mobile" placeholder="Your WhatsApp Number" >
+            <input type="mobile" class="form-control" name="mobile" id="m2mobile" placeholder="Your WhatsApp Number" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="m2college" placeholder="Name of Institute">
@@ -806,7 +806,7 @@
             <input type="email" class="form-control" name="email" id="m3email" placeholder="Your Email" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="m3mobile" placeholder="Your WhatsApp Number" >
+            <input type="mobile" class="form-control" name="mobile" id="m3mobile" placeholder="Your WhatsApp Number" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="m3college" placeholder="Name of Institute" >
@@ -867,7 +867,7 @@
             <input type="email" class="form-control" name="email" id="m4email" placeholder="Your Email">
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="m4mobile" placeholder="Your WhatsApp Number" >
+            <input type="mobile" class="form-control" name="mobile" id="m4mobile" placeholder="Your WhatsApp Number" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="m4college" placeholder="Name of Institute" >
@@ -926,7 +926,7 @@
             <input type="email" class="form-control" name="email" id="m5email" placeholder="Your Email">
           </div>
           <div class="col-md-6 form-group mt-3 ">
-            <input type="number" class="form-control" name="mobile" id="m5mobile" placeholder="Your WhatsApp Number" >
+            <input type="mobile" class="form-control" name="mobile" id="m5mobile" placeholder="Your WhatsApp Number" >
           </div>
           <div class="col-md-6 form-group mt-3 ">
             <input type="college" class="form-control" name="college" id="m5college" placeholder="Name of Institute" >
@@ -1023,10 +1023,11 @@
                                      <div class="alert alert-success text-center mt-5" role="alert">
                                       Pay your registration fee(per member ₹20) on <strong>95835 52803</strong> and upload your Screenshot below. 
                                     </div>
-                                    <div class="text-center">
-                                      <label >select image : </label>
-                                      <input type="file" id="image" accept="image/*"><br>
-                                       <button class="btn btn-primary mt-2" type="button" onclick="upload()">Upload</button>
+                                    <div class="row justify-content-md-center">
+                                      <div class="col-md-6 form-group mt-3 d-flex justify-center">
+                                      <input type="file"  class="form-control" id="image" placeholder="select image" accept="image/*"></div>
+                                      <div class="col-md-3 text-center text-lg-left form-group mt-3 mt-md-0">
+                                       <button class="btn btn-primary mt-3 " type="button" onclick="upload()">Upload</button></div>
                                        <span><div class="text-center mt-2"><button type="submit">Submit</button></div></span> 
                                       </div>
         
@@ -1302,8 +1303,8 @@
           <div class="info-box">
             <i class="bx bx-phone-call"></i>
             <h3>Call </h3>
-            <p>81440 64955 <strong>  Ankan Biswas</strong></p>
-            <p>82800 73045 <strong>  Debans Sahu</strong></p>
+            <p>81440 64955 - <strong>  Ankan Biswas</strong></p>
+            <p>82800 73045 - <b>  Debans Sahu</b></p>
           </div>
         </div>
       </div>
