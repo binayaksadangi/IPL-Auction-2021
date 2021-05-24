@@ -103,9 +103,7 @@ function submitRegistration(e){
   const tp1 = document.querySelector('#tp1').value;
   const tp2 = document.querySelector('#tp2').value;
   const tp3 = document.querySelector('#tp3').value;
-
-  //let date = new Date();
-
+  
   //console.log(date);
   // console.log(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr);
   // console.log(m1name,m1email,m1mobile,m1college,m1cname,m1cspec,m1yr);
