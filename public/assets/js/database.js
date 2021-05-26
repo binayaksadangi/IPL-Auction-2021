@@ -11,7 +11,7 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
-let registration = firebase.database().ref('registrations');
+let registration = firebase.database().ref('secondRound');
 let contactUs = firebase.database().ref('contactRequest');
 
 document
@@ -47,7 +47,6 @@ function saveContactInfo(name, email, message, subject) {
 document
   .querySelector('.register-form')
   .addEventListener('submit', submitRegistration);
-
 function submitRegistration(e){
   e.preventDefault();
 
@@ -98,6 +97,38 @@ function submitRegistration(e){
   const m5cname = document.querySelector('#m5cname').value;
   const m5cspec = document.querySelector('#m5cspec').value;
   const m5yr = document.querySelector('#m5yr').value;
+
+  const m6name = document.querySelector('#m6name').value;
+  const m6email = document.querySelector('#m6email').value;
+  const m6mobile = document.querySelector('#m6mobile').value;
+  const m6college = document.querySelector('#m6college').value;
+  const m6cname = document.querySelector('#m6cname').value;
+  const m6cspec = document.querySelector('#m6cspec').value;
+  const m6yr = document.querySelector('#m6yr').value;
+
+  const m7name = document.querySelector('#m7name').value;
+  const m7email = document.querySelector('#m7email').value;
+  const m7mobile = document.querySelector('#m7mobile').value;
+  const m7college = document.querySelector('#m7college').value;
+  const m7cname = document.querySelector('#m7cname').value;
+  const m7cspec = document.querySelector('#m7cspec').value;
+  const m7yr = document.querySelector('#m7yr').value;
+
+  const m8name = document.querySelector('#m8name').value;
+  const m8email = document.querySelector('#m8email').value;
+  const m8mobile = document.querySelector('#m8mobile').value;
+  const m8college = document.querySelector('#m8college').value;
+  const m8cname = document.querySelector('#m8cname').value;
+  const m8cspec = document.querySelector('#m8cspec').value;
+  const m8yr = document.querySelector('#m8yr').value;
+
+  const m9name = document.querySelector('#m9name').value;
+  const m9email = document.querySelector('#m9email').value;
+  const m9mobile = document.querySelector('#m9mobile').value;
+  const m9college = document.querySelector('#m9college').value;
+  const m9cname = document.querySelector('#m9cname').value;
+  const m9cspec = document.querySelector('#m9cspec').value;
+  const m9yr = document.querySelector('#m9yr').value;
   
   const tmember = document.querySelector('#tmember').value;
   const tp1 = document.querySelector('#tp1').value;
@@ -119,6 +150,10 @@ function submitRegistration(e){
     m3name,m3email,m3mobile,m3college,m3cname,m3cspec,m3yr,
     m4name,m4email,m4mobile,m4college,m4cname,m4cspec,m4yr,
     m5name,m5email,m5mobile,m5college,m5cname,m5cspec,m5yr,
+    m6name,m6email,m6mobile,m6college,m6cname,m6cspec,m6yr,
+    m7name,m7email,m7mobile,m7college,m7cname,m7cspec,m7yr,
+    m8name,m8email,m8mobile,m8college,m8cname,m8cspec,m8yr,
+    m9name,m9email,m9mobile,m9college,m9cname,m9cspec,m9yr,
     tmember,tp1,tp2,tp3);
   // saveMember1Info(m1name,m1email,m1mobile,m1college,m1cname,m1cspec,m1yr);
   // saveMember2Info(m2name,m2email,m2mobile,m2college,m2cname,m2cspec,m2yr);
@@ -126,7 +161,7 @@ function submitRegistration(e){
   // saveMember4Info(m4name,m4email,m4mobile,m4college,m4cname,m4cspec,m4yr);
   // saveMember5Info(m5name,m5email,m5mobile,m5college,m5cname,m5cspec,m5yr);
   // saveTeamInfo(tmember,tp1,tp2,tp3);
-   alert('Form submitted.');
+   alert('Your form has been submitted for rounf 2.');
   document.querySelector('.register-form').reset();
 }
 
@@ -136,6 +171,10 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
   m3name,m3email,m3mobile,m3college,m3cname,m3cspec,m3yr,
   m4name,m4email,m4mobile,m4college,m4cname,m4cspec,m4yr,
   m5name,m5email,m5mobile,m5college,m5cname,m5cspec,m5yr,
+  m6name,m6email,m6mobile,m6college,m6cname,m6cspec,m6yr,
+  m7name,m7email,m7mobile,m7college,m7cname,m7cspec,m7yr,
+  m8name,m8email,m8mobile,m8college,m8cname,m8cspec,m8yr,
+  m9name,m9email,m9mobile,m9college,m9cname,m9cspec,m9yr,
   tmember,tp1,tp2,tp3){
 
   let leader = registration.push();
@@ -148,6 +187,7 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     leaderCourse: lcname,
     leaderCranch: lcspec,
     leaderYear: lyr,
+
     member1Name: m1name,
     member1Email: m1email,
     member1WhatsApp: m1mobile,
@@ -155,6 +195,7 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     member1Course: m1cname,
     member1Branch: m1cspec,
     member1Year: m1yr,
+
     member2Name: m2name,
     member2Email: m2email,
     member2WhatsApp: m2mobile,
@@ -162,6 +203,7 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     member2Course: m2cname,
     member2Branch: m2cspec,
     member2Year: m2yr,
+
     member3Name: m3name,
     member3Email: m3email,
     member3WhatsApp: m3mobile,
@@ -169,6 +211,7 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     member3Course: m3cname,
     member3Branch: m3cspec,
     member3Year: m3yr,
+
     member4Name: m4name,
     member4Email: m4email,
     member4WhatsApp: m4mobile,
@@ -176,6 +219,7 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     member4Course: m4cname,
     member4Branch: m4cspec,
     member4Year: m4yr,
+
     member5Name: m5name,
     member5Email: m5email,
     member5WhatsApp: m5mobile,
@@ -183,6 +227,39 @@ function   saveLeaderInfo(lname,lemail,lmobile,lcollege,lcname,lcspec,lyr,
     member5Course: m5cname,
     member5Branch: m5cspec,
     member5Year: m5yr,
+
+    member6Name: m6name,
+    member6Email: m6email,
+    member6WhatsApp: m6mobile,
+    member6College: m6college,
+    member6Course: m6cname,
+    member6Branch: m6cspec,
+    member6Year: m6yr,
+
+    member7Name: m7name,
+    member7Email: m7email,
+    member7WhatsApp: m7mobile,
+    member7College: m7college,
+    member7Course: m7cname,
+    member7Branch: m7cspec,
+    member7Year: m7yr,
+
+    member8Name: m8name,
+    member8Email: m8email,
+    member8WhatsApp: m8mobile,
+    member8College: m8college,
+    member8Course: m8cname,
+    member8Branch: m8cspec,
+    member8Year: m8yr,
+
+    member9Name: m9name,
+    member9Email: m9email,
+    member9WhatsApp: m9mobile,
+    member9College: m9college,
+    member9Course: m9cname,
+    member9Branch: m9cspec,
+    member9Year: m9yr,
+
     totalMembers: tmember,
     teamPref1: tp1,
     teamPref2: tp2,
@@ -289,7 +366,7 @@ function upload() {
   var imageName=image.name;
   //firebase  storage reference
   //it is the path where yyour image will store
-  var storageRef=firebase.storage().ref('images/'+imageName);
+  var storageRef=firebase.storage().ref('secondRound/'+imageName);
   //upload image to selected storage reference
 
   var uploadTask=storageRef.put(image);
